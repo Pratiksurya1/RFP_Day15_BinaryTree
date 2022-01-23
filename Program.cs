@@ -12,10 +12,9 @@ namespace RFP_Day15_BinaryTree
         {
             BinaryTree binaryTree = new BinaryTree();
 
-            binaryTree.Add(10);
-            binaryTree.Add(20);
+            binaryTree.Add(56);
             binaryTree.Add(30);
-            binaryTree.Add(40);
+            binaryTree.Add(70);
         }
     }
 }

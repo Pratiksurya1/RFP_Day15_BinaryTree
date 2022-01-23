@@ -17,6 +17,10 @@ namespace RFP_Day15_BinaryTree
             binaryTree.Add(70);
 
             binaryTree.TraversePreorder(binaryTree.Root);
+
+            binaryTree.Search(30);
+
+            
         }
     }
 }

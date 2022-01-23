@@ -60,5 +60,34 @@ namespace RFP_Day15_BinaryTree
                 TraversePreorder(parent.RightNode);
             }
         }
+
+        public void Search(int value)
+        {
+            if(Root.Data == value)
+            {
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Node corn = Root;
+                while (corn !=null)
+                {
+                    if (value > Root.Data)
+                    {
+                        corn=corn.RightNode;
+                    }
+                    else
+                    {
+                        corn=corn.LeftNode;
+                    }
+                    if (corn.Data == value)
+                    {
+                        Console.WriteLine("Yes {0} value is found",corn.Data);
+                        break;
+                    }
+                }
+            }
+        
+        }
     }
 }

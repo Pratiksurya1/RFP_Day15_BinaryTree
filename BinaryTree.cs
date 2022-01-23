@@ -34,19 +34,31 @@ namespace RFP_Day15_BinaryTree
             if (this.Root == null)
             {
                 this.Root = newNode;
+                Console.WriteLine("Root value is "+newNode.Data);
             }
             else
             {
                 if(value< before.Data)
                 {
                     before.LeftNode = newNode;
+                    Console.WriteLine(newNode.Data+" Added in left");  
                 }
                 else
                 {
                     before.RightNode = newNode;
+                    Console.WriteLine(newNode.Data+" Added in right");
                 }  
             }
             return true;
+        }
+        public void TraversePreorder(Node parent)
+        {
+            if (parent != null)
+            {
+                Console.WriteLine(parent.Data);
+                TraversePreorder(parent.LeftNode);
+                TraversePreorder(parent.RightNode);
+            }
         }
     }
 }
